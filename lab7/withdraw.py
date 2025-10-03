@@ -3,7 +3,7 @@ import hashlib
 
 # Hàm kiểm tra PIN
 def verify_pin(card_no, pin):
-    conn = mysql.connector.connect(user="root", password="123456", database="atm_demo")
+    conn = mysql.connector.connect(user="root", password="Bungkhongday2005!", database="atm_demo")
     cur = conn.cursor()
     cur.execute("SELECT pin_hash FROM cards WHERE card_no=%s", (card_no,))
     row = cur.fetchone()
@@ -12,7 +12,7 @@ def verify_pin(card_no, pin):
 
 # Hàm rút tiền
 def withdraw(card_no, amount):
-    conn = mysql.connector.connect(user="root", password="123456", database="atm_demo")
+    conn = mysql.connector.connect(user="root", password="Bungkhongday2005!", database="atm_demo")
     cur = conn.cursor()
     try:
         conn.start_transaction()
@@ -33,8 +33,8 @@ def withdraw(card_no, amount):
 
         # Log giao dịch
         cur.execute("""
-            INSERT INTO transactions(account_id, card_no, atm_id, tx_type, amount, balance_after)
-            VALUES(%s,%s,1,'WITHDRAW',%s,%s)
+            INSERT INTO transactions(account_id, card_no, tx_type, amount, balance_after)
+VALUES(%s, %s, 'WITHDRAW', %s, %s)
         """, (account_id, card_no, amount, balance-amount))
 
         conn.commit()
