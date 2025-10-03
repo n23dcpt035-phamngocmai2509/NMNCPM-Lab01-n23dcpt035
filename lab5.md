@@ -10,13 +10,16 @@
 
 ## Artifacts
 
-- **Use Case:**
-    - [Usecase Diagram (Lab 02)](usecase%20lab2.png)
-    - [Usecase Description (Lab 02)](usecase%20description.txt)
+- **Use Case (Lab 02):**
+    - [Usecase Diagram](lab2/usecase%20lab2.png)
+    - [Usecase Description](lab2/usecase%20description.txt)
 
 - **Sequence Diagram (Lab 03):**
-    - [SQ Diagram](lab3/SQ%20lab3.png) 
+    - [SQ Diagram](lab3/SQ%20lab3.png)
     - [SQ Description](lab3/description.txt)
+    
+- **UML Thiết kế Khác (Lab 03):**
+    - [Usecase Diagram (Lại)](lab3/usecase%20lab3.png)
 
 - **Form Login Code (Lab 04):**
     - [Giao diện (index.html)](lab4/index.html)
