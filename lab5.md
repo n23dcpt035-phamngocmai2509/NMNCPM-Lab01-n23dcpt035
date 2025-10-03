@@ -10,8 +10,8 @@
 
 ##  Artifacts  
 
-- **Use Case (Lab 02):**  
- - ![Usecase Diagram](../lab2/usecase%20lab2.png)
+- **Use Case (Lab 02):**   
+  ![Usecase Diagram](../lab2/usecase%20lab2.png)
  - [Usecase Description](../lab2/usecase%20description.txt)
 
 - **Sequence Diagram (Lab 03):**  
