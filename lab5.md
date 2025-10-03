@@ -19,7 +19,7 @@
     - [SQ Description](lab3/description.txt)
     
 - **UML Thiết kế Khác (Lab 03):**
-    - [Usecase Diagram (Lại)](lab3/usecase%20lab3.png)
+    - [Usecase Diagram](lab3/usecase%20lab3.png)
 
 - **Form Login Code (Lab 04):**
     - [Giao diện (index.html)](lab4/index.html)
