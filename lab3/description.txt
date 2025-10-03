@@ -1,0 +1,54 @@
+
+
+# 📄 Sequence Diagram Description
+
+## 1. Use Case: Đặt phòng
+
+### 🔹 Các đối tượng tham gia
+
+* **Khách hàng**: Người sử dụng hệ thống để đặt phòng.
+* **Giao diện đặt phòng (UI)**: Cung cấp màn hình hiển thị và nhập dữ liệu cho khách hàng.
+* **Hệ thống đặt phòng (BookingSystem)**: Xử lý yêu cầu nghiệp vụ và giao tiếp với CSDL.
+* **Cơ sở dữ liệu (CSDL)**: Lưu trữ thông tin phòng và thông tin đặt phòng.
+
+### 🔹 Các thông điệp trao đổi
+
+1. **Khách hàng → UI**: Chọn chức năng "Đặt phòng".
+2. **UI → BookingSystem**: Gửi yêu cầu lấy danh sách phòng trống.
+3. **BookingSystem → CSDL**: Truy vấn thông tin phòng trống.
+4. **CSDL → BookingSystem**: Trả về danh sách phòng trống.
+5. **BookingSystem → UI**: Hiển thị danh sách phòng trống.
+6. **Khách hàng → UI**: Chọn phòng và nhập thông tin cá nhân.
+7. **UI → BookingSystem**: Gửi thông tin đặt phòng.
+8. **BookingSystem → CSDL**: Lưu thông tin đặt phòng.
+9. **CSDL → BookingSystem**: Xác nhận lưu thành công.
+10. **BookingSystem → UI**: Hiển thị thông báo đặt phòng thành công.
+11. **UI → Khách hàng**: Thông báo xác nhận đặt phòng.
+
+---
+
+## 2. Use Case: Check-in khách
+
+### 🔹 Các đối tượng tham gia
+
+* **Lễ tân**: Người thực hiện thủ tục check-in cho khách hàng.
+* **Giao diện Check-in (UI)**: Màn hình hỗ trợ nhập mã đặt phòng và hiển thị thông tin.
+* **Hệ thống đặt phòng (BookingSystem)**: Kiểm tra thông tin đặt phòng, cập nhật trạng thái phòng.
+* **Cơ sở dữ liệu (CSDL)**: Lưu trữ thông tin đặt phòng và trạng thái phòng.
+
+### 🔹 Các thông điệp trao đổi
+
+1. **Lễ tân → UI**: Chọn chức năng "Check-in khách".
+2. **UI → BookingSystem**: Yêu cầu nhập mã đặt phòng.
+3. **Lễ tân → UI**: Nhập mã đặt phòng.
+4. **UI → BookingSystem**: Gửi mã đặt phòng.
+5. **BookingSystem → CSDL**: Truy vấn thông tin đặt phòng.
+6. **CSDL → BookingSystem**: Trả về thông tin đặt phòng.
+7. **BookingSystem → UI**: Hiển thị thông tin đặt phòng.
+8. **Lễ tân → UI**: Xác nhận khách đến.
+9. **UI → BookingSystem**: Gửi xác nhận check-in.
+10. **BookingSystem → CSDL**: Cập nhật trạng thái phòng = “Đang sử dụng”.
+11. **CSDL → BookingSystem**: Xác nhận cập nhật thành công.
+12. **BookingSystem → UI**: Hiển thị thông báo check-in thành công.
+13. **UI → Lễ tân**: Thông báo thành công và bàn giao chìa khóa cho khách.
+
