@@ -1,36 +1,36 @@
-# Hello, my name is PhamNgocMai.  
+# Hello, my name is PhamNgocMai.
 
-# I am currently a Software Engineering student at \[Your University].  
+# I am currently a Software Engineering student at PTIT.
 
 # 
 
 # 🔹 Interests:
 
-# \- Software requirements and system analysis  
+# \- Software requirements and system analysis
 
-# \- Web and mobile application development  
+# \- Web and mobile application development
 
-# \- Artificial Intelligence and Machine Learning  
+# \- Artificial Intelligence and Machine Learning
 
 # 
 
 # 🔹 Skills:
 
-# \- Programming languages: Python, Java, JavaScript, SQL  
+# \- Programming languages: Python, Java, JavaScript, SQL
 
-# \- Tools: Git, Visual Studio Code, Jira, MySQL  
+# \- Tools: Git, Visual Studio Code, Jira, MySQL
 
-# \- Development process: Agile - Scrum, Waterfall  
+# \- Development process: Agile - Scrum, Waterfall
 
 # 
 
 # 🔹 Goals:
 
-# \- To become a professional software engineer  
+# \- To become a professional software engineer
 
-# \- To contribute to real-world software projects  
+# \- To contribute to real-world software projects
 
-# \- To keep learning about new technologies and trends in the IT industry  
+# \- To keep learning about new technologies and trends in the IT industry
 
 # 
 
