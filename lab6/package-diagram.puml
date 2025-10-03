@@ -1,0 +1,42 @@
+@startuml
+title ATM Package Diagram
+
+' Định nghĩa các gói
+package UI {
+  class Screen
+  class Keypad
+  class ReceiptPrinter
+}
+
+package Controller {
+  class ATM
+}
+
+package BankService {
+  class BankGateway
+  class Account
+  class Card
+  class Transaction
+}
+
+package Hardware {
+  class CardReader
+  class CashDispenser
+}
+
+' ---------------------------------
+' Thiết lập Phụ thuộc (Dependencies)
+' ---------------------------------
+
+' UI gọi Controller để xử lý nghiệp vụ
+UI .> Controller : gọi
+
+' Controller điều phối nghiệp vụ
+' Controller phụ thuộc vào BankService để xử lý tài khoản
+Controller .> BankService : kết nối/xử lý
+
+' Controller phụ thuộc vào Hardware để thao tác vật lý
+Controller .> Hardware : điều khiển
+
+' BankService không phụ thuộc vào các gói khác (chỉ là lớp dịch vụ)
+@enduml
