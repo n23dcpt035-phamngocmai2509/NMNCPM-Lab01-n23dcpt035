@@ -10,7 +10,7 @@
 
 ## Artifacts
 
-- **Use Case:** [Usecase Diagram](../lab2/usecase%20lab2.png), [Usecase Description](../lab2/usecase%20description.txt)  
+- **Use Case:** [Usecase Diagram](usecase%20lab2.png), [Usecase Description](../lab2/usecase%20description.txt)  
 - **Sequence Diagram:** [Sequence Diagram](../lab3/sequence.png)  
 - **Form Login Code:** [index.html](../lab4/index.html), [script.js](../lab4/script.js), [style.css](../lab4/style.css)
 
