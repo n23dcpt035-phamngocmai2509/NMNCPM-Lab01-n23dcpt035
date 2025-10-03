@@ -1,6 +1,6 @@
 # Lab 05 – Tích hợp, quản lý & báo cáo  
 
-## 🎯 Mục tiêu  
+##  Mục tiêu  
 - Hoàn thiện quy trình phần mềm từ thiết kế đến triển khai.  
 - Gom tất cả các artifacts (Use Case, Sequence Diagram, Form Login Code).  
 - Viết báo cáo mô tả quy trình làm việc.  
@@ -8,7 +8,7 @@
 
 ---
 
-## 📂 Artifacts  
+##  Artifacts  
 
 - **Use Case (Lab 02):**  
   - [Usecase Diagram](../lab2/usecase%20lab2.png)  
@@ -24,7 +24,7 @@
 
 ---
 
-## 🔄 Quy trình làm việc  
+##  Quy trình làm việc  
 
 1. Thiết kế Use Case và Use Case Description (Lab 02).  
 2. Vẽ Sequence Diagram mô tả luồng xử lý (Lab 03).  
@@ -34,7 +34,7 @@
 
 ---
 
-## 🚀 Hướng dẫn push code & quản lý version  
+##  Hướng dẫn push code & quản lý version  
 
 ```bash
 # Clone r
