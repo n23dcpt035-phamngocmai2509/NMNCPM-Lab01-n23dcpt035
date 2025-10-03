@@ -15,7 +15,7 @@
   - [Usecase Description]([../lab2/usecase%20description.txt](https://github.com/n23dcpt035-phamngocmai2509/NMNCPM-Lab01-n23dcpt035/blob/main/lab2/usecase%20description.txt))  
 
 - **Sequence Diagram (Lab 03):**  
-  - [Sequence Diagram](lab3/SQ lab3.png)
+  - [Sequence Diagram]((https://github.com/n23dcpt035-phamngocmai2509/NMNCPM-Lab01-n23dcpt035/blob/c301613ba5f28a2d059e848bc554d52f1e780a38/lab3/SQ%20lab3.png))
   - [Description]([[../lab3/sequence.png](https://github.com/n23dcpt035-phamngocmai2509/NMNCPM-Lab01-n23dcpt035/blob/main/lab3/SQ%20lab3.png)](https://github.com/n23dcpt035-phamngocmai2509/NMNCPM-Lab01-n23dcpt035/blob/main/lab3/description.txt))
   - [Usecase](https://github.com/n23dcpt035-phamngocmai2509/NMNCPM-Lab01-n23dcpt035/blob/main/lab3/usecase%20lab3.png)
 - **Form Login Code (Lab 04):**  
