@@ -10,10 +10,12 @@
 
 ## Artifacts
 
-- **Use Case:** - [Usecase Diagram (Lab 02)](usecase%20lab2.png)
+- **Use Case:**
+    - [Usecase Diagram (Lab 02)](usecase%20lab2.png)
     - [Usecase Description (Lab 02)](usecase%20description.txt)
 
-- **Sequence Diagram (Lab 03):** - [SQ Diagram](lab3/SQ%20lab3.png) 
+- **Sequence Diagram (Lab 03):**
+    - [SQ Diagram](lab3/SQ%20lab3.png) 
     - [SQ Description](lab3/description.txt)
 
 - **Form Login Code (Lab 04):**
