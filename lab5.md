@@ -10,10 +10,16 @@
 
 ## Artifacts
 
-- **Use Case:** [Usecase Diagram](usecase%20lab2.png), [Usecase Description](../lab2/usecase%20description.txt)  
-- **Sequence Diagram:** [Sequence Diagram](../lab3/sequence.png)  
-- **Form Login Code:** [index.html](../lab4/index.html), [script.js](../lab4/script.js), [style.css](../lab4/style.css)
+- **Use Case:** - [Usecase Diagram (Lab 02)](usecase%20lab2.png)
+    - [Usecase Description (Lab 02)](usecase%20description.txt)
 
+- **Sequence Diagram (Lab 03):** - [SQ Diagram](lab3/SQ%20lab3.png) 
+    - [SQ Description](lab3/description.txt)
+
+- **Form Login Code (Lab 04):**
+    - [Giao diện (index.html)](lab4/index.html)
+    - [Script JS (script.js)](lab4/script.js)
+    - [CSS (style.css)](lab4/style.css)
 
 ---
 
