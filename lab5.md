@@ -11,7 +11,7 @@
 ##  Artifacts  
 
 - **Use Case (Lab 02):**  
-  - [Usecase Diagram]([../lab2/usecase%20lab2.png](https://github.com/n23dcpt035-phamngocmai2509/NMNCPM-Lab01-n23dcpt035/blob/main/lab2/usecase%20lab2.png))  
+  - [Usecase Diagram]([../lab2/usecase%20lab2.png])  
   - [Usecase Description]([../lab2/usecase%20description.txt](https://github.com/n23dcpt035-phamngocmai2509/NMNCPM-Lab01-n23dcpt035/blob/main/lab2/usecase%20description.txt))  
 
 - **Sequence Diagram (Lab 03):**  
