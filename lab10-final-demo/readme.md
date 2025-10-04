@@ -22,19 +22,22 @@ Tổng hợp toàn bộ các bài Lab từ 01 → 09 để tạo thành **Mini P
 ---
 
 ## 🧩 CẤU TRÚC THƯ MỤC
+
+```
 /labs/lab10-final-demo/
 │
-├── lab02-usecase/ # Use Case Diagram
-├── lab03-sequence/ # Sequence Diagram
-├── lab04-login-form/ # Form đăng nhập
-├── lab05-database/ # ERD + Script SQL
-├── lab06-class-diagram/ # Class Diagram UML
-├── lab07-withdraw-module/ # Module xử lý rút tiền
-├── lab08-testing/ # Unit & Integration Test
-├── lab09-jira-report/ # Báo cáo Jira Sprint
+├── lab02-usecase/          # Use Case Diagram
+├── lab03-sequence/         # Sequence Diagram
+├── lab04-login-form/       # Form đăng nhập
+├── lab05-database/         # ERD + Script SQL
+├── lab06-class-diagram/    # Class Diagram UML
+├── lab07-withdraw-module/  # Module xử lý rút tiền
+├── lab08-testing/          # Unit & Integration Test
+├── lab09-jira-report/      # Báo cáo Jira Sprint
 │
-├── final-report.md # Báo cáo tổng hợp
-└── README.md # File mô tả chính của Mini Project
+├── final-report.md         # Báo cáo tổng hợp
+└── README.md               # File mô tả chính của Mini Project
+```
 
 ---
 
@@ -53,25 +56,12 @@ ATM mini project mô phỏng hoạt động cơ bản của một máy rút ti�
 ## 🧱 UML MODELS
 
 ### 🟦 Use Case Diagram (Lab 02)
-Mô tả các tác nhân và chức năng chính:
-
-- **User:** Đăng nhập, xem số dư, rút tiền.  
-- **System:** Xác thực PIN, xử lý giao dịch, cập nhật số dư.
-
 ![Use Case Diagram](../lab02-usecase/usecase_atm.png)
 
----
-
 ### 🟧 Sequence Diagram (Lab 03)
-Luồng tương tác khi **người dùng đăng nhập và rút tiền**:
-
 ![Sequence Diagram](../lab03-sequence/sequence_atm.png)
 
----
-
 ### 🟨 Class Diagram (Lab 06)
-Cấu trúc hướng đối tượng của hệ thống ATM:
-
 ![Class Diagram](../lab06-class-diagram/class_atm.png)
 
 ---
@@ -79,14 +69,9 @@ Cấu trúc hướng đối tượng của hệ thống ATM:
 ## 🗃 DATABASE DESIGN (Lab 05)
 
 ### 🧩 ERD – Entity Relationship Diagram
-
-Mô hình dữ liệu của hệ thống:
-Account(account_id, pin, balance)
-Transaction(transaction_id, account_id, amount, type, date)
-
 ![ERD Diagram](../lab05-database/erd_atm.png)
 
-### 🗄 Script tạo bảng
+**Script tạo bảng:**
 
 ```sql
 CREATE TABLE Account (
@@ -103,8 +88,77 @@ CREATE TABLE Transaction (
     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (account_id) REFERENCES Account(account_id)
 );
+```
 
+---
 
+## 💻 GIAO DIỆN & CHỨC NĂNG CHÍNH
 
+### 🔹 Form Login (Lab 04)
+![Login Form](../lab04-login-form/login_form.png)
 
+### 🔹 Withdraw Module (Lab 07)
 
+```python
+def withdraw(account_id, amount):
+    account = accounts.get(account_id)
+    if not account:
+        return False, "Account not found"
+    if account["balance"] >= amount:
+        account["balance"] -= amount
+        return True, account["balance"]
+    return False, "Insufficient funds"
+```
+
+---
+
+## 🧪 KIỂM THỬ (Lab 08)
+
+### Unit Test – `test_withdraw.py`
+![Unit Test Result](../lab08-testing/unit_test_result.png)
+
+### Integration Test – `selenium_test_login.py`
+![Selenium Test Result](../lab08-testing/selenium_test_result.png)
+
+---
+
+## 📋 QUẢN LÝ DỰ ÁN (Lab 09 – Jira)
+![Jira Board](../lab09-jira-report/jira_board.png)
+
+---
+
+## 🎥 DEMO CUỐI KỲ
+![Demo Screenshot](../lab10-final-demo/demo.png)
+
+---
+
+## 🧾 KẾT LUẬN & HƯỚNG PHÁT TRIỂN
+
+### ✅ Kết quả đạt được:
+- Tích hợp thành công toàn bộ module từ Lab 02 → 09.  
+- Giao diện đơn giản, chạy ổn định.  
+- Toàn bộ test pass 100%.  
+- Quản lý công việc rõ ràng qua Jira.
+
+### 🚀 Hướng mở rộng:
+- Thêm chức năng **nạp tiền, chuyển khoản, tra cứu lịch sử giao dịch.**  
+- Xây dựng **REST API + giao diện web hiện đại (React, Flask).**  
+- Kết nối cơ sở dữ liệu thật (MySQL / PostgreSQL).  
+- Thêm bảo mật (mã hóa PIN, xác thực 2 bước).
+
+---
+
+## 🔗 LINK REPO GITHUB
+👉 [https://github.com/ngocmaiN23/NMNCPM-Lab10-ATM](https://github.com/ngocmaiN23/NMNCPM-Lab10-ATM)
+
+---
+
+## 👏 THÔNG TIN SINH VIÊN
+**Họ tên:** Nguyễn Ngọc Mai  
+**MSSV:** N23DCPT035  
+**Lớp:** D23CQPT01-N  
+**Giảng viên hướng dẫn:** [Tên GV của bạn]  
+
+---
+
+> 🧡 *“Mini Project ATM – Một sản phẩm nhỏ nhưng thể hiện đầy đủ quy trình phát triển phần mềm từ phân tích, thiết kế, lập trình, kiểm thử đến quản lý dự án.”*
