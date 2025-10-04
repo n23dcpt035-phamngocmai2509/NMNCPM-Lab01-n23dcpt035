@@ -1,0 +1,74 @@
+@startuml
+title ATM Class Diagram
+
+' ---------------------------------
+' 1. Các Lớp Thực Thể (Entity Classes)
+' ---------------------------------
+class ATM {
+  - atmId : int
+  - location : String
+  - cashLevel : double
+  + authenticate(card:Card, pin:String) : boolean
+  + withdraw(card:Card, amount:double) : Transaction
+  + deposit(card:Card, amount:double) : Transaction
+  + transfer(from:Account, to:Account, amount:double) : Transaction
+  + printReceipt(tx:Transaction)
+}
+
+class Card {
+  - cardNo : String
+  - pinHash : String
+  - status : String  ' (Active, Blocked, Expired)
+  - associatedAccountNo : String
+  + validatePin(pin:String) : boolean
+  + getAccount() : Account
+}
+
+class Account {
+  - accountNo : String
+  - balance : double
+  - ownerName : String
+  + debit(amount:double)
+  + credit(amount:double)
+  + checkBalance() : double
+}
+
+class Transaction {
+  - txId : int
+  - type : String   ' (Withdraw, Deposit, Transfer, Balance Inquiry)
+  - amount : double
+  - time : DateTime
+  - status : String ' (Success, Failed, Pending)
+  + record()
+}
+
+' ---------------------------------
+' 2. Lớp Dịch Vụ Mới (Service/Control)
+' ---------------------------------
+' Thêm lớp để mô hình hóa kết nối với Ngân hàng
+class BankService {
+  + verifyCard(cardNo:String) : boolean
+  + requestTransaction(tx:Transaction) : boolean
+  + updateBalance(account:Account)
+}
+
+' ---------------------------------
+' 3. Quan Hệ (Relationships)
+' ---------------------------------
+' ATM sử dụng (phụ thuộc) BankService để giao tiếp với Ngân hàng
+ATM .> BankService
+
+' ATM thực hiện các giao dịch trên Card và tạo Transaction
+ATM "1" --> "1..*" Card : sử dụng
+ATM "1" --> "0..*" Transaction : tạo
+
+' Card liên kết với một Account (1 Card có 1 Account chính)
+Card "1..*" -- "1" Account : liên kết với
+
+' Transaction ghi lại sự thay đổi của Account (hoặc liên quan đến Account)
+Account "1" --> "0..*" Transaction : liên quan đến
+
+' BankService nhận các giao dịch để xử lý
+BankService "1" <-- "0..*" Transaction : xử lý
+
+@enduml
