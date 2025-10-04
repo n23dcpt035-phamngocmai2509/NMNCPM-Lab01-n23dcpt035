@@ -1,7 +1,7 @@
 # 💳 MINI PROJECT – ATM SYSTEM
 
 **Môn học:** Nhập môn Công nghệ Phần mềm  
-**Sinh viên:** Nguyễn Ngọc Mai  
+**Sinh viên:** PhạmPhạm Ngọc Mai  
 **MSSV:** N23DCPT035  
 **Lớp:** D23CQPT01-N  
 **Lab 10 – Báo cáo tổng hợp & Demo cuối kỳ**
@@ -56,20 +56,19 @@ ATM mini project mô phỏng hoạt động cơ bản của một máy rút ti�
 ## 🧱 UML MODELS
 
 ### 🟦 Use Case Diagram (Lab 02)
-![Use Case Diagram](../lab02-usecase/usecase_atm.png)
+![Use Case Diagram]
 
 ### 🟧 Sequence Diagram (Lab 03)
-![Sequence Diagram](../lab03-sequence/sequence_atm.png)
+![Sequence Diagram]
 
 ### 🟨 Class Diagram (Lab 06)
-![Class Diagram](../lab06-class-diagram/class_atm.png)
-
+![Class Diagram]
 ---
 
 ## 🗃 DATABASE DESIGN (Lab 05)
 
 ### 🧩 ERD – Entity Relationship Diagram
-![ERD Diagram](../lab05-database/erd_atm.png)
+![ERD Diagram]
 
 **Script tạo bảng:**
 
@@ -95,7 +94,7 @@ CREATE TABLE Transaction (
 ## 💻 GIAO DIỆN & CHỨC NĂNG CHÍNH
 
 ### 🔹 Form Login (Lab 04)
-![Login Form](../lab04-login-form/login_form.png)
+![Login Form]
 
 ### 🔹 Withdraw Module (Lab 07)
 
@@ -115,20 +114,19 @@ def withdraw(account_id, amount):
 ## 🧪 KIỂM THỬ (Lab 08)
 
 ### Unit Test – `test_withdraw.py`
-![Unit Test Result](../lab08-testing/unit_test_result.png)
-
+![Unit Test Result]
 ### Integration Test – `selenium_test_login.py`
-![Selenium Test Result](../lab08-testing/selenium_test_result.png)
+![Selenium Test Result]
 
 ---
 
 ## 📋 QUẢN LÝ DỰ ÁN (Lab 09 – Jira)
-![Jira Board](../lab09-jira-report/jira_board.png)
+![Jira Board]
 
 ---
 
 ## 🎥 DEMO CUỐI KỲ
-![Demo Screenshot](../lab10-final-demo/demo.png)
+![Demo Screenshot]
 
 ---
 
@@ -149,15 +147,14 @@ def withdraw(account_id, amount):
 ---
 
 ## 🔗 LINK REPO GITHUB
-👉 [https://github.com/ngocmaiN23/NMNCPM-Lab10-ATM](https://github.com/ngocmaiN23/NMNCPM-Lab10-ATM)
+👉 [https://github.com/ngocmaiN23/NMNCPM-Lab10-ATM](https://github.com/n23dcpt035-phamngocmai2509/NMNCPM-Lab01-n23dcpt035/tree/main)
 
 ---
 
 ## 👏 THÔNG TIN SINH VIÊN
-**Họ tên:** Nguyễn Ngọc Mai  
+**Họ tên:** Phạm Ngọc Mai  
 **MSSV:** N23DCPT035  
-**Lớp:** D23CQPT01-N  
-**Giảng viên hướng dẫn:** [Tên GV của bạn]  
+**Lớp:** D23CQPT01-N   
 
 ---
 
